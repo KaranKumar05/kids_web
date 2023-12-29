@@ -1,0 +1,14 @@
+.sectionTitleContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sectionTitleContainer h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.sectionTitleContainer > div{
+    height: 2px;
+    background-color: black;
+    width: 33%;
+}
