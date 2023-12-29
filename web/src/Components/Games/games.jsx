@@ -1,13 +1,20 @@
-import React from 'react'
+import React from "react";
 
-import SectionTitle from '../SectionTitle/sectionTitle'
+import './games.css'
+
+import SectionTitle from "../SectionTitle/sectionTitle";
 
 function Games() {
   return (
-    <div>
-        <SectionTitle title="Games" />
+    <div className="gameContainer">
+      <SectionTitle title="Games" />
+      <div className="games">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Games
+export default Games;

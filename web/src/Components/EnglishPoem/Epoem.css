@@ -1,17 +1,19 @@
-.gameContainer{
+.englishPoemContainer{
     padding: 3rem 0;
+    border-bottom: 2px solid blue;
+    border-top: 2px solid blue;
 }
-.games{
+.englishPoems{
     /* padding: 0 1rem; */
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
-.games > div{
+.englishPoems > div{
     height: 250px;
     width: 250px;
     /* border: 2px solid black; */
-    border-radius: 10px;
     background-color: purple;
+    border-radius: 10px;
 }

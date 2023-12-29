@@ -9,7 +9,7 @@ function Home() {
         <div className="banner"></div>
         <div className="homeText">
           <h1>
-            Free and <span>Fun</span> digital <span>education</span> for all
+            Free and <span>Fun education</span> for all
             <span> children worldwide</span>
           </h1>
         </div>

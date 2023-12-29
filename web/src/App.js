@@ -1,9 +1,14 @@
 import './App.css';
+
+// Components 
 import EnglishPoem from './Components/EnglishPoem/Epoem';
 import Games from './Components/Games/games';
 import Home from './Components/Home/home';
 import Navbar from './Components/Navbar/navbar';
 import UrduPoem from './Components/UrduPoem/Upoem';
+import Footer from './Components/Footer/footer';
+
+
 
 
 function App() {
@@ -16,6 +21,7 @@ function App() {
         <EnglishPoem />
         <Games />
       </div>
+      <Footer />
     </div>
   );
 }
