@@ -31,3 +31,14 @@
         width: 33%;
     }
 }
+@media (max-width: 547px) {
+    .sectionTitleContainer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+    .sectionTitleContainer>div {
+        width: 90%;
+    }
+}

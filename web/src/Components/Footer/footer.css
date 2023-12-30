@@ -1,5 +1,61 @@
-.footerContainer > div{
-    height: 50vh;
+.footerContainer {
     background-color: purple;
+    padding: 3rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: white;
+}
+
+.footerContainer>div:nth-child(1) {
+    display: flex;
+    gap: 5rem;
+}
+
+.footerContainer>div h1 {
+    border-bottom: 2px solid white;
+}
+
+.footerContainer>div p {
+    font-size: 1.2rem;
+}
+
+.footerContainer>div:nth-child(2) {
+    align-self: center;
+    display: flex;
+    border-top: 2px solid white;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+
+}
+
+.footerContainer>div:nth-child(2) a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media (max-width:878px) {
+    .footerContainer>div:nth-child(1) {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width:572px) {
+
+    .footerContainer>div:nth-child(1) span {
+        text-align: justify;
+    }
+    
+    .footerContainer>div p {
+        font-size: 1.1rem;
+    }
+
 
 }

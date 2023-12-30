@@ -5,7 +5,7 @@ import "./home.css";
 function Home() {
   return (
     <>
-      <div className="homeContainer">
+      <div className="homeContainer" id="home">
         <div className="banner"></div>
         <div className="homeText">
           <h1>

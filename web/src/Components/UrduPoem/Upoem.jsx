@@ -6,7 +6,7 @@ import SectionTitle from '../SectionTitle/sectionTitle'
 
 function UrduPoem() {
   return (
-    <div className='urduPoemContainer'>
+    <div className='urduPoemContainer' id='urduPoem'>
       <SectionTitle title="Urdu Poem" />
       <div className="urduPoems">
         <div></div>

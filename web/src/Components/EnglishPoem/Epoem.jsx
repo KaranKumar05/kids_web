@@ -5,7 +5,7 @@ import './Epoem.css'
 import SectionTitle from "../SectionTitle/sectionTitle";
 function EnglishPoem() {
   return (
-    <div className="englishPoemContainer">
+    <div className="englishPoemContainer" id="englishPoem">
       <SectionTitle title="English Poem" />
       <div className="englishPoems">
         <div></div>
