@@ -48,7 +48,7 @@ function Navbar() {
           Games
         </ScrollLink>
         <ScrollLink
-          to="Q/AContainer"
+          to="QAContainer"
           smooth={true}
           duration={900}
           onClick={closeNav} data-aos="fade-down"

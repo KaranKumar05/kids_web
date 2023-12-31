@@ -25,7 +25,7 @@ function App() {
           <Route path="/urduPoem" element={<UrduPoem />} />
           <Route path="/englishPoem" element={<EnglishPoem />} />
           <Route path="/games" element={<Games />} />
-          <Route path="/Q/AContainer" element={<QueAns />} />
+          <Route path="/QAContainer" element={<QueAns />} />
         </Routes>
         <UrduPoem />
         <EnglishPoem />

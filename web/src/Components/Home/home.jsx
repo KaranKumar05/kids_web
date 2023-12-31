@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 
 import "./home.css";
 
+import BannerPic from '../Assets/bannerPic.png'
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -13,11 +15,12 @@ function Home() {
     <>
       <div className="homeContainer" id="home">
         <div className="banner"></div>
-        <div className="homeText"  data-aos="fade-up">
-          <h1  data-aos="fade-up">
-            Free and <span>Fun education</span> for all
-            <span> children worldwide</span>
+        <div className="homeText" data-aos="fade-up">
+          <h1 data-aos="fade-up">
+            Welcome
+            <span>Free and Fun education for all children worldwide</span>
           </h1>
+          <img src={BannerPic}  width={350} height={400}/>
         </div>
       </div>
     </>

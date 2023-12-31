@@ -1,7 +1,5 @@
 .englishPoemContainer{
     padding: 3rem 0;
-    border-bottom: 2px solid blue;
-    border-top: 2px solid blue;
 }
 .englishPoems{
     display: flex;
