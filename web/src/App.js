@@ -9,6 +9,7 @@ import Home from './Components/Home/home';
 import Navbar from './Components/Navbar/navbar';
 import UrduPoem from './Components/UrduPoem/Upoem';
 import Footer from './Components/Footer/footer';
+import QueAns from './Components/QueAns/QueAns';
 
 
 
@@ -24,10 +25,12 @@ function App() {
           <Route path="/urduPoem" element={<UrduPoem />} />
           <Route path="/englishPoem" element={<EnglishPoem />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/Q/AContainer" element={<QueAns />} />
         </Routes>
         <UrduPoem />
         <EnglishPoem />
         <Games />
+        <QueAns />
         <Footer />
       </div>
     </Router>

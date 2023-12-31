@@ -28,7 +28,7 @@ function Footer() {
         </span>
       </div>
       <div>
-        <ScrollLink to="navbar" smooth={true} duration={500}>
+        <ScrollLink to="home" smooth={true} duration={1000}>
           Back to Top <FaRegArrowAltCircleUp />
         </ScrollLink>
       </div>

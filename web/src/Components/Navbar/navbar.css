@@ -13,6 +13,9 @@ header {
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
+	position: fixed;
+	z-index: 100000;
+	width: 100%;
 	background-color: purple;
 	color: white;
 }
@@ -45,7 +48,7 @@ nav {
 	align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 824px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
