@@ -20,26 +20,35 @@ function Games() {
       <SectionTitle title="Games" />
       <div className="games">
         <div data-aos="fade-up">
-          <img src={FlappyBird} />
+          <img src={FlappyBird} alt="Flappy-Bird" />
           <h3>Flappy Bird</h3>
-          <a href="https://karankumar05.github.io/flappy-bird/" target="_blank">
-            Play
-          </a>
-        </div>
-        <div data-aos="fade-up">
-          <img src={PaintApp} />
-          <h3>Paint App</h3>
           <a
-            href="https://karankumar05.github.io/Painting_App/"
+            href="https://karankumar05.github.io/flappy-bird/"
             target="_blank"
+            rel="noreferrer"
           >
             Play
           </a>
         </div>
         <div data-aos="fade-up">
-          <img src={TikTakToe} />
+          <img src={PaintApp} alt="Paint-App" />
+          <h3>Paint App</h3>
+          <a
+            href="https://karankumar05.github.io/Painting_App/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Play
+          </a>
+        </div>
+        <div data-aos="fade-up">
+          <img src={TikTakToe} alt="Tik-Tak-Toe" />
           <h3>Tik Tak Toe</h3>
-          <a href="https://karankumar05.github.io/tic_tac_tio/" target="_blank">
+          <a
+            href="https://karankumar05.github.io/tic_tac_tio/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Play
           </a>
         </div>

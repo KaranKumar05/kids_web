@@ -1,4 +1,4 @@
-.footerContainer {
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&family=Single+Day&display=swap');.footerContainer {
     background-color: purple;
     padding: 3rem 3rem 1rem 3rem;
     display: flex;
@@ -14,10 +14,13 @@
 
 .footerContainer>div h1 {
     border-bottom: 2px solid white;
+    font-family: 'Sevillana', cursive;
+
 }
 
 .footerContainer>div p {
     font-size: 1.2rem;
+    font-family: 'Single Day', cursive;
 }
 
 .footerContainer>div:nth-child(2) {

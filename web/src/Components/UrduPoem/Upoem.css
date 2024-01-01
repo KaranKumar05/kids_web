@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 .urduPoemContainer{
     padding: 3rem 0;
 }
 .urduPoems{
-    /* padding: 0 1rem; */
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 .urduPoems > div{
-    height: 250px;
-    width: 250px;
-    /* border: 2px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: white;
+    border-radius: 5px;
+    padding: .5rem;
+}
+.urduPoems > div h3{
+    text-align: center;
+    padding: .5rem;
+    color: white;
     background-color: purple;
-    border-radius: 10px;
+    font-family: 'Single Day', cursive;
+    font-weight: lighter;
+}
+
+@media (max-width:500px) {
+    .urduPoems > div > video{
+        width: 300px;
+        height: 200px;
+    }
+    
 }

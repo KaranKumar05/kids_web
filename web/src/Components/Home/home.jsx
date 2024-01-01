@@ -14,13 +14,13 @@ function Home() {
   return (
     <>
       <div className="homeContainer" id="home">
-        <div className="banner"></div>
+        <div className="Banner"></div>
         <div className="homeText" data-aos="fade-up">
           <h1 data-aos="fade-up">
             Welcome
             <span>Free and Fun education for all children worldwide</span>
           </h1>
-          <img src={BannerPic}  width={350} height={400}/>
+          <img src={BannerPic}  width={350} height={400} alt="Banner"/>
         </div>
       </div>
     </>
