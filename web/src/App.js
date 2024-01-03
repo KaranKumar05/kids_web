@@ -1,6 +1,6 @@
 import './App.css';
 
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components 
 import EnglishPoem from './Components/EnglishPoem/Epoem';
@@ -10,6 +10,7 @@ import Navbar from './Components/Navbar/navbar';
 import UrduPoem from './Components/UrduPoem/Upoem';
 import Footer from './Components/Footer/footer';
 import QueAns from './Components/QueAns/QueAns';
+import TextToSpeech from './Components/TextToSpeech/textToSpeech';
 
 
 
@@ -25,11 +26,13 @@ function App() {
           <Route path="/urduPoem" element={<UrduPoem />} />
           <Route path="/englishPoem" element={<EnglishPoem />} />
           <Route path="/games" element={<Games />} />
+          <Route path="/textToSpeechContainer" element={<TextToSpeech />} />
           <Route path="/QAContainer" element={<QueAns />} />
         </Routes>
         <UrduPoem />
         <EnglishPoem />
         <Games />
+        <TextToSpeech />
         <QueAns />
         <Footer />
       </div>

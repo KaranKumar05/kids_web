@@ -4,6 +4,8 @@ import "./navbar.css";
 
 import { Link as ScrollLink } from "react-scroll";
 
+import Logo from "../Assets/Logo.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -22,7 +24,7 @@ function Navbar() {
   }, []);
   return (
     <header id="navbar">
-      <h3 data-aos="fade-down">LOGO</h3>
+      <img data-aos="fade-down" src={Logo} alt="Logo" />
       <nav ref={navRef}>
         <ScrollLink
           to="home"
@@ -61,6 +63,15 @@ function Navbar() {
           Games
         </ScrollLink>
         <ScrollLink
+          to="textToSpeechContainer"
+          smooth={true}
+          duration={900}
+          onClick={closeNav}
+          data-aos="fade-down"
+        >
+          Text To Speak
+        </ScrollLink>
+        <ScrollLink
           to="QAContainer"
           smooth={true}
           duration={900}
@@ -69,6 +80,9 @@ function Navbar() {
         >
           Q/A
         </ScrollLink>
+
+        <img data-aos="fade-down" src={Logo} alt="Logo" />
+
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
