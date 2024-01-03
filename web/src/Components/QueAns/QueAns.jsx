@@ -54,7 +54,7 @@ function QueAns() {
   };
   return (
     <div id="QAContainer">
-      <SectionTitle title={"Questions/Answers"} />
+      <SectionTitle title={"General Knowledge"} />
       <div className="QueAnsContainer">
         {initialQuestions.map((qa, index) => (
           <div key={index} data-aos="fade-up">

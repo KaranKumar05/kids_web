@@ -17,7 +17,6 @@ header {
 	z-index: 100000;
 	width: 100%;
 	background-color: purple;
-
 	color: white;
 }
 header img{
@@ -95,5 +94,10 @@ nav {
 
 	nav a {
 		font-size: 1.5rem;
+	}
+}
+@media (max-width:552px) {
+	header {
+		padding: 0 1rem;
 	}
 }

@@ -78,10 +78,9 @@ function Navbar() {
           onClick={closeNav}
           data-aos="fade-down"
         >
-          Q/A
+          GK
         </ScrollLink>
 
-        <img data-aos="fade-down" src={Logo} alt="Logo" />
 
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
