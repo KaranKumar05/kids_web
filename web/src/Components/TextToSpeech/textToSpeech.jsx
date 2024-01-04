@@ -4,6 +4,8 @@ import "./textToSpeech.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import urduAlphabetSpeech from "./urduAlphabetSpeech.mp4";
+
 import SectionTitle from "../SectionTitle/sectionTitle";
 
 const SpeechButton = ({ content }) => {
@@ -52,53 +54,12 @@ const TextToSpeech = () => {
 
   const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 
-  const urduAlphabets = [
-    "ا",
-    "ب",
-    "پ",
-    "ت",
-    "ٹ",
-    "ث",
-    "ج",
-    "چ",
-    "ح",
-    "خ",
-    "د",
-    "ڈ",
-    "ذ",
-    "ر",
-    "ڑ",
-    "ز",
-    "ژ",
-    "س",
-    "ش",
-    "ص",
-    "ض",
-    "ط",
-    "ظ",
-    "ع",
-    "غ",
-    "ف",
-    "ق",
-    "ک",
-    "گ",
-    "ل",
-    "م",
-    "ن",
-    "ں",
-    "ھ",
-    "و",
-    "ء",
-    "ی",
-    "ے",
-  ].reverse();
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
     <div id="textToSpeechContainer">
-      <SectionTitle title="Text to Speech" />
+      <SectionTitle title="Alphabets/Numbers" />
       <div className="content">
         <h3 data-aos="fade-up">English Alphabets</h3>
         <div data-aos="fade-up">
@@ -115,9 +76,7 @@ const TextToSpeech = () => {
         </div>
         <h3 data-aos="fade-up">Urdu Alphabets</h3>
         <div data-aos="fade-up">
-          {urduAlphabets.map((urduAlphabet, index) => (
-            <SpeechButton key={index} content={urduAlphabet} />
-          ))}
+          <video src={urduAlphabetSpeech} controls></video>
         </div>
       </div>
     </div>

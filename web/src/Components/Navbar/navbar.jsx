@@ -69,7 +69,7 @@ function Navbar() {
           onClick={closeNav}
           data-aos="fade-down"
         >
-          Text To Speak
+          Alphabets/Numbers
         </ScrollLink>
         <ScrollLink
           to="QAContainer"
