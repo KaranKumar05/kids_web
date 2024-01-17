@@ -1,0 +1,47 @@
+.subtitleContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.subtitleContainer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(80, 0, 80), rgb(247, 74, 247));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.subtitleContainer>div {
+    height: 3px;
+    background: linear-gradient(to right, rgb(80, 0, 80), rgb(247, 74, 247));
+    width: 20%;
+}
+
+@media (max-width:752px) {
+    .subtitleContainer {
+        padding: 2rem 1rem;
+    }
+
+    .subtitleContainer h3 {
+        font-size: 1rem;
+    }
+
+    .subtitleContainer>div {
+        width: 33%;
+    }
+}
+
+@media (max-width: 547px) {
+    .subtitleContainer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+
+    .subtitleContainer>div {
+        width: 100%;
+    }
+}

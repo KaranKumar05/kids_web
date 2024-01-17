@@ -4,15 +4,16 @@ import "./Upoem.css";
 
 import SectionTitle from "../SectionTitle/sectionTitle";
 
-import EkMotaHathi from '../Assets/Poems/UrduPoems/Ek_Mota_Hathi.mp4'
-import MainTota from '../Assets/Poems/UrduPoems/Main_Tota.mp4'
-import ChadiyaRani from '../Assets/Poems/UrduPoems/Chadiya_Rani.mp4'
-import BulbulKaBcha from '../Assets/Poems/UrduPoems/Bulbul_ka_bcha.mp4'
-import LakdiKeKathi from '../Assets/Poems/UrduPoems/Lakdi_Ke_Kathi.mp4'
-import NaniTeriMoreNeKoMore from '../Assets/Poems/UrduPoems/Nani_Teri_More.mp4'
+import EkMotaHathi from "../Assets/Poems/UrduPoems/Ek_Mota_Hathi.mp4";
+import MainTota from "../Assets/Poems/UrduPoems/Main_Tota.mp4";
+import ChadiyaRani from "../Assets/Poems/UrduPoems/Chadiya_Rani.mp4";
+import BulbulKaBcha from "../Assets/Poems/UrduPoems/Bulbul_ka_bcha.mp4";
+import LakdiKeKathi from "../Assets/Poems/UrduPoems/Lakdi_Ke_Kathi.mp4";
+import NaniTeriMoreNeKoMore from "../Assets/Poems/UrduPoems/Nani_Teri_More.mp4";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Subtitle from "../SectionSubTitle/subtitle";
 
 function UrduPoem() {
   useEffect(() => {
@@ -20,7 +21,9 @@ function UrduPoem() {
   }, []);
   return (
     <div className="urduPoemContainer" id="urduPoem">
-      <SectionTitle title="Urdu Poem" />
+      <SectionTitle title="Poems" />
+      <Subtitle subtitle={"Urdu Poems"} />
+
       <div className="urduPoems">
         <div data-aos="fade-up">
           <h3>Ek Mota Hathi Jhoom ke Chala</h3>
@@ -44,7 +47,12 @@ function UrduPoem() {
         </div>
         <div data-aos="fade-up">
           <h3>Mani Teri Morni ko Mor le Gaye</h3>
-          <video src={NaniTeriMoreNeKoMore} height={200} width={350} controls></video>
+          <video
+            src={NaniTeriMoreNeKoMore}
+            height={200}
+            width={350}
+            controls
+          ></video>
         </div>
       </div>
     </div>

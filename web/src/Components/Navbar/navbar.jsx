@@ -42,16 +42,7 @@ function Navbar() {
           onClick={closeNav}
           data-aos="fade-down"
         >
-          Urdu Poem
-        </ScrollLink>
-        <ScrollLink
-          to="englishPoem"
-          smooth={true}
-          duration={700}
-          onClick={closeNav}
-          data-aos="fade-down"
-        >
-          English Poem
+          Poems
         </ScrollLink>
         <ScrollLink
           to="games"
@@ -72,13 +63,22 @@ function Navbar() {
           Alphabets/Numbers
         </ScrollLink>
         <ScrollLink
+          to="duaContainer"
+          smooth={true}
+          duration={900}
+          onClick={closeNav}
+          data-aos="fade-down"
+        >
+          Dua/Qulma
+        </ScrollLink>
+        <ScrollLink
           to="QAContainer"
           smooth={true}
           duration={900}
           onClick={closeNav}
           data-aos="fade-down"
         >
-          GK
+          Q/A
         </ScrollLink>
 
 

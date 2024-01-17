@@ -6,69 +6,143 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import "./QueAns.css";
+import Subtitle from "../SectionSubTitle/subtitle";
 
 function QueAns() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  const initialQuestions = [
+  const islamicQuestions = [
     {
-      question: "ہمارے نبی کا نام کیا ہے؟",
+      question: "ہم سب کون ہیں؟",
+      answer: "ہم مسلمان ہیں",
+    },
+    {
+      question: "ہمارا دین کیا ہے؟",
+      answer: "ہمارا دین اسلام ہے۔",
+    },
+    {
+      question: "ہمیں کس نے پیدا کیا؟",
+      answer: "اللہ نے ہمیں پیدا کیا۔",
+    },
+    {
+      question: "کتنے اللہ ہیں؟",
+      answer: "صرف ایک اللہ ہے۔",
+    },
+    {
+      question: "ہمارے آخری نبی کا نام کیا ہے؟",
+      answer: "آخری نبی کا نام ہضمت محمد صلی اللہ علیہ وآلہ وسلم ہے۔",
+    },
+    {
+      question: "آخری نبی حضرت محمد صلی اللہ علیہ وآلہ وسلم کا ولادت؟",
       answer:
-        "محمد صلی اللہ علیہ وسلم",
+        "آخری نبی حضرت محمد صلی اللہ علیہ وآلہ وسلم کی ولادت 12 ربیع الأول کو ہوئی تھی۔",
     },
     {
-      question: "پہلے نبی کا نام کیا ہے؟",
-      answer: "آدم علیہ السلام",
+      question: "حضرت محمد صلی اللہ علیہ وآلہ وسلم کے والد کا نام کیا تھا؟",
+      answer:
+        "آخری نبی حضرت محمد صلی اللہ علیہ وآلہ وسلم کے والد کا نام حضرت عبداللہ تھا۔",
     },
     {
-      question: "آخری نبی کا نام کیا ہے؟",
-      answer: 'آخری نبی کا نام کیا ہے؟',
+      question: "حضرت محمد صلی اللہ علیہ وآلہ وسلم کی والدہ کا نام کیا تھا؟",
+      answer:
+        "حضرت محمد صلی اللہ علیہ وآلہ وسلم کی والدہ کا نام حضرت بی بی آمنہ تھا۔",
     },
     {
-      question: "کیا ہمارے نبی پاک صلی اللہ علیہ وسلم کے بعد کوئی نبی ہے؟",
-      answer: "نہیں",
+      question: "قرآن مجید کس پر نازل ہوئی؟",
+      answer: "قرآن مجید حضرت محمد صلی اللہ علیہ وآلہ وسلم پر نازل ہوئی۔",
     },
     {
-      question: "اسلامی کیلنڈر میں کتنے مہینے ہیں؟",
-      answer: "12",
+      question: "مسلمان ہاج کرنا کہاں جاتا ہے؟",
+      answer: "مسلمان حاج کرنا مکہ مکرمہ جاتا ہے۔",
     },
     {
-      question: "اسلامی کلینڈر کا تیسرا مہینہ کیا ہے؟",
-      answer: "ربیع الاول",
+      question: "مسلمان سال میں کتنی عیدیں مناتا ہے؟",
+      answer: "مسلمان سال میں دو عیدیں مناتا ہے۔",
     },
     {
-      question: "مسلمان نماز کے وقت کس طرف منہ کرتے ہیں؟",
-      answer: "مسلمان نماز کے وقت مکہ میں خانہ کعبہ کی طرف منہ کرتے ہیں۔",
+      question: "مسلمان دن میں کتنی نمازیں پڑھتا ہے؟",
+      answer: "مسلمان دن میں پانچ نمازیں پڑھتا ہے۔",
     },
     {
-      question: "وہ کون سی پانچ نمازیں ہیں جو مسلمانوں کو ادا کرنے کی ترغیب دی جاتی ہیں؟",
-      answer: "پانچوں نمازیں فجر، ظہر، عصر، مغرب اور عشاء ہیں۔",
+      question: "ہم سب کس کے اولاد ہیں؟",
+      answer: "ہم سب آدم علیہ السلام کے اولاد ہیں۔",
     },
     {
-      question: "کیا آپ اسلام میں سب سے پہلے مرد اور عورت کا نام بتا سکتے ہیں جنہیں اللہ نے بنایا؟",
-      answer: "پہلا مرد آدم ہے اور پہلی عورت حوا (حوا) ہے۔",
+      question: "اسلام کا کتنے ارکان ہیں؟",
+      answer: "اسلام کے پانچ ارکان ہیں۔",
     },
     {
-      question: "اس فرشتے کا نام کیا ہے جو اللہ کے پیغامات کو نبیوں تک پہنچاتا تھا؟",
-      answer: "فرشتہ جبرائیل علیہ السلام ہیں۔",
+      question: "اسلام میں کتنے کلمہ ہے؟",
+      answer: "اسلام میں چھ کلمہ ہیں۔",
+    },
+    {
+      question: "کوئی بھی کام شروع کرنے سے پہلے کیا پڑھنا چاہئے؟",
+      answer: 'کوئی بھی کام شروع کرنے سے پہلے "بِسْمِ اللّٰہِ الرَّحْمٰنِ الرَّحِیْمِ" پڑھنا چاہیے۔',
+    },
+  ];
+  const generalKnowledgeQuestions = [
+    {
+      question: "Who is the founder of Pakistan?",
+      answer: "Muhammad Ali Jinnah is the founder of Pakistan",
+    },
+    {
+      question: "What is the capital of Pakistan?",
+      answer: "Islamabad is the capital city of Pakistan",
+    },
+    {
+      question: "What is the currency of Pakistan?",
+      answer: "Pakistani Rupees",
+    },
+    {
+      question: "What is the largest city in Pakistan?",
+      answer: "Karachi is the largest city in Pakistan",
+    },
+    {
+      question: "What is the largest state in Pakistan?",
+      answer: "Balochistan is the largest state in Pakistan",
+    },
+    {
+      question: "What is the national animal of Pakistan?",
+      answer: "Markhor is the national animal of pakistan",
+    },
+    {
+      question: "How many countries are there in the world",
+      answer: "There are 195 countries in the world",
+    },
+    {
+      question: "How many days are there in a week?",
+      answer: "7 days  in a week",
+    },
+    {
+      question: "What is the largest ocean on Earth?",
+      answer: "The largest ocean is the Pacific Ocean",
     },
   ];
   const [showAnswers, setShowAnswers] = useState(
-    Array(initialQuestions.length).fill(false)
+    Array(islamicQuestions.length).fill(false)
+  );
+
+  const [showAnswersGK, setShowAnswersGK] = useState(
+    Array(generalKnowledgeQuestions.length).fill(false)
   );
 
   const toggleAnswer = (index) => {
     const newShowAnswers = [...showAnswers];
     newShowAnswers[index] = !newShowAnswers[index];
     setShowAnswers(newShowAnswers);
+
+    const newShowAnswersGK = [...showAnswersGK];
+    newShowAnswersGK[index] = !newShowAnswersGK[index];
+    setShowAnswersGK(newShowAnswersGK);
   };
   return (
     <div id="QAContainer">
-      <SectionTitle title={"General Knowledge"} />
-      <div className="QueAnsContainer">
-        {initialQuestions.map((qa, index) => (
+      <SectionTitle title={"Questions/Answers"} />
+      <Subtitle subtitle={"ISLAMIAT"} />
+      <div className="QueAnsContainer islamicQA">
+        {islamicQuestions.map((qa, index) => (
           <div key={index} data-aos="fade-up">
             <h2 className="queHeading">Question {index + 1}</h2>
             <p className="question">{qa.question}</p>
@@ -78,6 +152,27 @@ function QueAns() {
             </button>
 
             {showAnswers[index] && (
+              <div>
+                <h2 className="ansHeading">Answer:</h2>
+                <p className="answer">{qa.answer}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <Subtitle subtitle={"GERENAL KNOWLEDGE"} />
+      <div className="QueAnsContainer generalKnowledgeQA">
+        {generalKnowledgeQuestions.map((qa, index) => (
+          <div key={index} data-aos="fade-up">
+            <h2 className="queHeading">Question {index + 1}</h2>
+            <p className="question">{qa.question}</p>
+
+            <button onClick={() => toggleAnswer(index)}>
+              {showAnswersGK[index] ? "Answer" : "Answer"}
+            </button>
+
+            {showAnswersGK[index] && (
               <div>
                 <h2 className="ansHeading">Answer:</h2>
                 <p className="answer">{qa.answer}</p>

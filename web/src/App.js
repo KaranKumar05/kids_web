@@ -11,6 +11,7 @@ import UrduPoem from './Components/UrduPoem/Upoem';
 import Footer from './Components/Footer/footer';
 import QueAns from './Components/QueAns/QueAns';
 import TextToSpeech from './Components/TextToSpeech/textToSpeech';
+import Dua from './Components/Dua/dua';
 
 
 
@@ -27,12 +28,14 @@ function App() {
           <Route path="/englishPoem" element={<EnglishPoem />} />
           <Route path="/games" element={<Games />} />
           <Route path="/textToSpeechContainer" element={<TextToSpeech />} />
+          <Route path="/duaContainer" element={<TextToSpeech />} />
           <Route path="/QAContainer" element={<QueAns />} />
         </Routes>
         <UrduPoem />
         <EnglishPoem />
         <Games />
         <TextToSpeech />
+        <Dua />
         <QueAns />
         <Footer />
       </div>

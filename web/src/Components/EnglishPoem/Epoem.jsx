@@ -9,19 +9,20 @@ import TwinkleStar from "../Assets/Poems/EnglishPoems/Twinkle_Little_Star.mp4";
 import WheelsOnTheBus from "../Assets/Poems/EnglishPoems/Wheels_on_the_bus.mp4";
 import JohnnyJohnny from "../Assets/Poems/EnglishPoems/Johnny_johnny.mp4";
 
-import SectionTitle from "../SectionTitle/sectionTitle";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Subtitle from "../SectionSubTitle/subtitle";
 
 function EnglishPoem() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  
+
   return (
     <div className="englishPoemContainer" id="englishPoem">
-      <SectionTitle title="English Poem" />
+      {/* <SectionTitle title="English Poem" /> */}
+      <Subtitle subtitle={"English Poems"} />
       <div className="englishPoems">
         <div data-aos="fade-up">
           <h3>Baba Black Sheep</h3>

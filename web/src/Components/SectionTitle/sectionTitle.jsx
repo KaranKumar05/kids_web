@@ -12,7 +12,6 @@ function SectionTitle({ title }) {
   return (
     <div className="sectionTitleContainer" data-aos="fade-right">
       <h1>{title}</h1>
-      <div></div>
     </div>
   );
 }
