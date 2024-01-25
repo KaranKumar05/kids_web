@@ -26,27 +26,27 @@ function EnglishPoem() {
       <div className="englishPoems">
         <div data-aos="fade-up">
           <h3>Baba Black Sheep</h3>
-          <video src={BabaBlackSheep} height={200} width={350} controls></video>
+          <video src={BabaBlackSheep} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Baby Shark</h3>
-          <video src={BabyShark} height={200} width={350} controls></video>
+          <video src={BabyShark} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Twinkle Twinkle Little Star</h3>
-          <video src={TwinkleStar} height={200} width={350} controls></video>
+          <video src={TwinkleStar} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Wheels on the bus go Round a</h3>
-          <video src={WheelsOnTheBus} height={200} width={350} controls></video>
+          <video src={WheelsOnTheBus} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Pee ka Boo</h3>
-          <video src={PeeKaBoo} height={200} width={350} controls></video>
+          <video src={PeeKaBoo} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Johnny Johnny yes papa</h3>
-          <video src={JohnnyJohnny} height={200} width={350} controls></video>
+          <video src={JohnnyJohnny} height={200} width={350} controls preload="none"></video>
         </div>
       </div>
     </div>

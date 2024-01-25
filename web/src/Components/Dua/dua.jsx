@@ -22,21 +22,21 @@ function Dua() {
       <div className="duaContainer">
         <div data-aos="fade-up">
           <h3>Pehla Kalma-Kalma Tyaba</h3>
-          <video src={fristKalma} height={200} width={350} controls></video>
+          <video src={fristKalma} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Dusra kalma-Kalma Shahadat</h3>
-          <video src={secondKalma} height={200} width={350} controls></video>
+          <video src={secondKalma} height={200} width={350} controls preload="none"></video>
         </div>
       </div>
       <div className="duaContainer">
         <div data-aos="fade-up">
           <h3>Dudh pina ke Dua</h3>
-          <video src={milkDua} height={200} width={350} controls></video>
+          <video src={milkDua} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Sona ki Dua</h3>
-          <video src={soneKeDua} height={200} width={350} controls></video>
+          <video src={soneKeDua} height={200} width={350} controls preload="none"></video>
         </div>
       </div>
     </div>

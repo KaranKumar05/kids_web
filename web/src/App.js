@@ -18,28 +18,28 @@ import Dua from './Components/Dua/dua';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/navbar" element={<Navbar />} />
-          <Route path="/urduPoem" element={<UrduPoem />} />
-          <Route path="/englishPoem" element={<EnglishPoem />} />
-          <Route path="/games" element={<Games />} />
-          <Route path="/textToSpeechContainer" element={<TextToSpeech />} />
-          <Route path="/duaContainer" element={<TextToSpeech />} />
-          <Route path="/QAContainer" element={<QueAns />} />
-        </Routes>
-        <UrduPoem />
-        <EnglishPoem />
-        <Games />
-        <TextToSpeech />
-        <Dua />
-        <QueAns />
-        <Footer />
-      </div>
-    </Router>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/navbar" element={<Navbar />} />
+            <Route path="/urduPoem" element={<UrduPoem />} />
+            <Route path="/englishPoem" element={<EnglishPoem />} />
+            <Route path="/games" element={<Games />} />
+            <Route path="/textToSpeechContainer" element={<TextToSpeech />} />
+            <Route path="/duaContainer" element={<TextToSpeech />} />
+            <Route path="/QAContainer" element={<QueAns />} />
+          </Routes>
+          <UrduPoem />
+          <EnglishPoem />
+          <Games />
+          <TextToSpeech />
+          <Dua />
+          <QueAns />
+          <Footer />
+        </div>
+      </Router>
   );
 }
 

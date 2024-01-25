@@ -27,23 +27,23 @@ function UrduPoem() {
       <div className="urduPoems">
         <div data-aos="fade-up">
           <h3>Ek Mota Hathi Jhoom ke Chala</h3>
-          <video src={EkMotaHathi} height={200} width={350} controls></video>
+          <video src={EkMotaHathi} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Main Tota Main Tota</h3>
-          <video src={MainTota} height={200} width={350} controls></video>
+          <video src={MainTota} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Chidiya Rani Badi Sayani</h3>
-          <video src={ChadiyaRani} height={200} width={350} controls></video>
+          <video src={ChadiyaRani} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Bulbul Ka Bacha</h3>
-          <video src={BulbulKaBcha} height={200} width={350} controls></video>
+          <video src={BulbulKaBcha} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Lakdi Ki kathi Kathi pe Ghoda</h3>
-          <video src={LakdiKeKathi} height={200} width={350} controls></video>
+          <video src={LakdiKeKathi} height={200} width={350} controls preload="none"></video>
         </div>
         <div data-aos="fade-up">
           <h3>Mani Teri Morni ko Mor le Gaye</h3>
@@ -52,6 +52,7 @@ function UrduPoem() {
             height={200}
             width={350}
             controls
+            preload="none"
           ></video>
         </div>
       </div>

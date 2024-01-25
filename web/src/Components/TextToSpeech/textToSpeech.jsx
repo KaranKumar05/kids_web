@@ -18,8 +18,11 @@ import che from "./urduAudio/10 che.mp3";
 import bareeHe from "./urduAudio/11 baree he.mp3";
 import khe from "./urduAudio/12 khe.mp3";
 import daal from "./urduAudio/13 daal.mp3";
+import Daal from "./urduAudio/14 Daal.mp3";
 import zaal from "./urduAudio/15 zaal.mp3";
 import re from "./urduAudio/16 re.mp3";
+import Re from "./urduAudio/17 Re.mp3";
+import ze from "./urduAudio/18 ze.mp3";
 import zhe from "./urduAudio/19 zhe.mp3";
 import seen from "./urduAudio/20 seen.mp3";
 import sheen from "./urduAudio/21 sheen.mp3";
@@ -68,8 +71,7 @@ const SpeechButton = ({ content }) => {
 };
 
 const TextToSpeech = () => {
-
-  // Urdu Sound State 
+  // Urdu Sound State
   const [urduAudio] = useState(new Audio(alif));
   const [urduAudio1] = useState(new Audio(ba));
   const [urduAudio2] = useState(new Audio(pa));
@@ -103,108 +105,120 @@ const TextToSpeech = () => {
   const [urduAudio30] = useState(new Audio(choteehe));
   const [urduAudio31] = useState(new Audio(ye));
   const [urduAudio32] = useState(new Audio(bhareeye));
+  const [urduAudio33] = useState(new Audio(Daal));
+  const [urduAudio34] = useState(new Audio(Re));
+  const [urduAudio35] = useState(new Audio(ze));
 
+  const DaalSound = () => {
+    urduAudio33.play();
+  };
+  const ReSound = () => {
+    urduAudio34.play();
+  };
+  const zeSound = () => {
+    urduAudio35.play();
+  };
   const alifSound = () => {
     urduAudio.play();
-  }
+  };
   const baSound = () => {
     urduAudio1.play();
-  }
+  };
   const paSound = () => {
     urduAudio2.play();
-  }
+  };
   const taSound = () => {
     urduAudio3.play();
-  }
+  };
   const teSound = () => {
     urduAudio4.play();
-  }
+  };
   const seSound = () => {
     urduAudio5.play();
-  }
+  };
   const jeemSound = () => {
     urduAudio6.play();
-  }
+  };
   const cheSound = () => {
     urduAudio7.play();
-  }
+  };
   const bareeHeSound = () => {
     urduAudio8.play();
-  }
+  };
   const kheSound = () => {
     urduAudio9.play();
-  }
+  };
   const daalSound = () => {
     urduAudio10.play();
-  }
+  };
   const zaalSound = () => {
     urduAudio11.play();
-  }
+  };
   const reSound = () => {
     urduAudio12.play();
-  }
+  };
   const zheSound = () => {
     urduAudio13.play();
-  }
+  };
   const seenSound = () => {
     urduAudio14.play();
-  }
+  };
   const sheenSound = () => {
     urduAudio15.play();
-  }
+  };
   const svaadSound = () => {
     urduAudio16.play();
-  }
+  };
   const zaadSound = () => {
     urduAudio17.play();
-  }
+  };
   const toySound = () => {
     urduAudio18.play();
-  }
+  };
   const zoySound = () => {
     urduAudio19.play();
-  }
+  };
   const ainSound = () => {
     urduAudio20.play();
-  }
+  };
   const gainSound = () => {
     urduAudio21.play();
-  }
+  };
   const feSound = () => {
     urduAudio22.play();
-  }
+  };
   const qaafSound = () => {
     urduAudio23.play();
-  }
+  };
   const kaafSound = () => {
     urduAudio24.play();
-  }
+  };
   const gaafSound = () => {
     urduAudio25.play();
-  }
+  };
   const laamSound = () => {
     urduAudio26.play();
-  }
+  };
   const meemSound = () => {
     urduAudio27.play();
-  }
+  };
   const noonSound = () => {
     urduAudio28.play();
-  }
+  };
   const vaaoSound = () => {
     urduAudio29.play();
-  }
+  };
   const choteeheSound = () => {
     urduAudio30.play();
-  }
+  };
   const yeSound = () => {
     urduAudio31.play();
-  }
+  };
   const bhareeyeSound = () => {
     urduAudio32.play();
-  }
+  };
 
-  // Number Sound State 
+  // Number Sound State
   const [audio] = useState(new Audio(one));
   const [audio1] = useState(new Audio(two));
   const [audio2] = useState(new Audio(three));
@@ -303,15 +317,15 @@ const TextToSpeech = () => {
             <button onClick={seSound}>ث</button>
             <button onClick={jeemSound}>ج</button>
             <button onClick={cheSound}>چ</button>
-            {/* <button onClick={}>ح</button> */}
+            <button onClick={bareeHeSound}>ح</button>
             <button onClick={kheSound}>خ</button>
             <button onClick={daalSound}>د</button>
-            {/* <button onClick={}>ڈ</button> */}
+            <button onClick={DaalSound}>ڈ</button>
             <button onClick={zaalSound}>ذ</button>
             <button onClick={reSound}>ر</button>
-            {/* <button onClick={}>ڑ</button> */}
-            {/* <button onClick={}>ز</button> */}
-            {/* <button onClick={}>ژ</button> */}
+            <button onClick={ReSound}>ڑ</button>
+            <button onClick={zeSound}>ز</button>
+            <button onClick={zheSound}>ژ</button>
             <button onClick={seenSound}>س</button>
             <button onClick={sheenSound}>ش</button>
             <button onClick={svaadSound}>ص</button>

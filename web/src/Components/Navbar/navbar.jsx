@@ -6,8 +6,9 @@ import { Link as ScrollLink } from "react-scroll";
 
 import Logo from "../Assets/Logo.png";
 
-import AOS from "aos";
+import AOS from "aos";  
 import "aos/dist/aos.css";
+import CountdownApp from "../CountDown/countDown";
 
 function Navbar() {
   const navRef = useRef();
@@ -80,7 +81,9 @@ function Navbar() {
         >
           Q/A
         </ScrollLink>
-
+        <ScrollLink data-aos="fade-down">
+          <CountdownApp />
+        </ScrollLink>
 
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />

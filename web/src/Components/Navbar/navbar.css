@@ -14,7 +14,7 @@ header {
 	height: 80px;
 	padding: 0 2rem;
 	position: fixed;
-	z-index: 100000;
+	z-index: 10;
 	width: 100%;
 	background: linear-gradient(to bottom, rgb(69, 0, 69), rgb(187, 3, 187));
 	color: white;

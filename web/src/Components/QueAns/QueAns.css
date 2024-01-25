@@ -64,6 +64,9 @@
   margin-bottom: 1rem;
 }
 
+.islamicQA > div > div p{
+  text-align: right;
+}
 .islamicQA > div > div p,
 .generalKnowledgeQA > div > div p {
   display: flex;
